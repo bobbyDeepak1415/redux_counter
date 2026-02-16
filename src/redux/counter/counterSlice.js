@@ -12,7 +12,9 @@ const counterSlice = createSlice({
       count.value += 1;
     },
     decrement: (state) => {
-      state.value = -1;
+      if (state.value > 0) {
+        state.value -= 1;
+      }
     },
     multiplyBy2: (state) => {
       state.value *= 2;
