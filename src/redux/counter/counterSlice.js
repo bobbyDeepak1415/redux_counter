@@ -19,7 +19,7 @@ export const counterSlice = createSlice({
     },
     
     multiplyByTwo: (state) => {
-      state.value *= 2;
+      state.value *= 2;...
     }
     
   },
