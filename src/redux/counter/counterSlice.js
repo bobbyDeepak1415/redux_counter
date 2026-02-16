@@ -1,29 +1,29 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit";
 
-const initialState={
-  value:0
-}
+const initialState = {
+  value: 0,
+};
 
-
-const counterSlice=createSlice({
-  name:"counter",
+const counterSlice = createSlice({
+  name: "counter",
   initialState,
-  reducers:{
-    increment:(count)=>{
- count.value+=1
+  reducers: {
+    increment: (count) => {
+      count.value += 1;
     },
-    decrement:(state)=>{
-state.value=-1
+    decrement: (state) => {
+      state.value = -1;
     },
-    multiplyBy2:(state)=>{
-state.value*=2
+    multiplyBy2: (state) => {
+      state.value *= 2;
     },
-    increseByAmount:(state,action)=>{
-state.value+=action.payload
+    increaseByAmount: (state, action) => {
+      state.value += action.payload;
     },
-  }
-})
+  },
+});
 
+export const { increment, decrement, multiplyBy2, increaseByAmount } =
+  counterSlice.actions;
 
-
-export default counterSlice.reducer
+export default counterSlice.reducer;
