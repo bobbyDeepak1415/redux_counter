@@ -18,7 +18,12 @@ function App() {
       <Navbar />
       <h2>{count}</h2>
       <button onClick={() => dispatch(increment())}>+</button>
-      <button disabled={count.value===0} onClick={() => dispatch(decrement())}>-</button>
+      <button
+        disabled={count.value === 0}
+        onClick={() => dispatch(decrement())}
+      >
+        -
+      </button>
       <button onClick={() => dispatch(multiplyBy2())}>*2</button>
       <button onClick={() => dispatch(increaseByAmount(4))}>+Amount</button>
     </div>
@@ -26,4 +31,3 @@ function App() {
 }
 
 export default App;
-...
