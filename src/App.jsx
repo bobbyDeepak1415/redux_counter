@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./Navbar";
 
 import { increment, decrement } from "./redux/MoviesSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
       <h2>Hello</h2>
+      <Navbar count={count}/>
 
       <p>
         <span>The counter is at:</span>
