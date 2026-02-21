@@ -22,7 +22,7 @@ const MoviesSlice = createSlice({
       state.value *= 3;
     },
   },
-});
+});..
 
 export const { increment, decrement, increaseByAmount, multiplyBy3 } =
   MoviesSlice.actions;
