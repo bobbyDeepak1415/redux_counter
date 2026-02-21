@@ -4,7 +4,7 @@ const initialState = {
   value: 0,
 };
 
-const MoviesSlice = createSlice({
+const CounterSlice = createSlice({
   name: "counter",
   initialState,
   reducers: {
@@ -22,9 +22,9 @@ const MoviesSlice = createSlice({
       state.value *= 3;
     },
   },
-});..
+});
 
 export const { increment, decrement, increaseByAmount, multiplyBy3 } =
-  MoviesSlice.actions;
+  CounterSlice.actions;
 
-export default MoviesSlice.reducer;
+export default CounterSlice.reducer;

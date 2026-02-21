@@ -6,7 +6,7 @@ import {
   decrement,
   increaseByAmount,
   multiplyBy3,
-} from "./redux/MoviesSlice";
+} from "./redux/CounterSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 function App() {
