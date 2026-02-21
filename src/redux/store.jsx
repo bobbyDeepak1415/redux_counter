@@ -1,8 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 
+import CounterReducer from './MoviesSlice'
+
 
 const store=configureStore({
     reducer:{
-        counter:
+        counter:CounterReducer
     }
 })
+
+export default store
