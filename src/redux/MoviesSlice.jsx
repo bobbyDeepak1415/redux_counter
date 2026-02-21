@@ -9,10 +9,11 @@ const MoviesSlice = createSlice({
   initialState,
   reducers: {
     increment: (state) => {
-      state.value -= 1;
+      state.value += 1;
     },
     decrement: (state) => {
-      state.value += 1;
+      if (state.value <= 0) return;
+      state.value -= 1;
     },
   },
 });
